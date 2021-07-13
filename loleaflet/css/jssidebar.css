@@ -31,7 +31,7 @@
 }
 
 .sidebar.ui-listbox {
-	max-width: 190px;
+	min-width: auto;
 }
 
 .sidebar.ui-drawing-area {
@@ -40,6 +40,10 @@
 
 .sidebar.ui-expander-label.expanded {
 	padding-left: 14px;
+	color: var(--gray-light-txt--color);
+	font-size: 11px;
+	line-height: 23px;
+	font-weight: bold;
 }
 
 .sidebar.ui-expander-label.expanded:before {
@@ -70,4 +74,17 @@ td.jsdialog .jsdialog.cell.sidebar {
 .sidebar .menu-entry-icon {
 	width: 24px;
 	height: 24px;
+}
+
+.sidebar.unotoolbutton,
+.sidebar #resetattr,
+.sidebar #FormatPaintbrush{
+	border: 1px solid transparent;
+}
+.sidebar.unotoolbutton:hover,
+.sidebar #resetattr:hover,
+.sidebar #FormatPaintbrush:hover {
+	border-color: #cccccc;
+	background-color: #eeeeee;
+	border-radius: 4px;
 }
