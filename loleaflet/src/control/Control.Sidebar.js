@@ -113,7 +113,7 @@ L.Control.Sidebar = L.Control.extend({
 				if ($('#sidebar-dock-wrapper').width() != sidebarWidth) {
 					$('#sidebar-dock-wrapper').show();
 					$('#sidebar-dock-wrapper').width(sidebarWidth);
-					this.map.options.documentContainer.style.width = 'calc(100% - 530px)';
+					$('#sidebar-dock-wrapper').addClass('sidebar-open');
 					this.map._onResize();
 					this.map.dialog._resizeCalcInputBar(sidebarWidth);
 				}
